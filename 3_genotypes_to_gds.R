@@ -1,3 +1,6 @@
+# From Plink tped/tfam output, converts to bim/bed/fam in Plink
+# Takes bim/bed/fam and generates an annotated gds
+
 # Get in bim bed fam from tped/fam
 for (arrayid in 1:27){
   command_text <- paste0("module load plink/1.90-fasrc01; plink --tfile ../EU_20K_gds/geno_EU_20K_", arrayid, 

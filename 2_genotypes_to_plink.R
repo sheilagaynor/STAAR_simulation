@@ -1,3 +1,6 @@
+# In 27 parallelized jobs, merges genotype ouput in R
+# Saves output as tped/tfam file for use in Plink
+
 # Load libraries
 arrayid <- as.numeric(Sys.getenv('SLURM_ARRAY_TASK_ID')) 
 chunks <- split(1:243, ceiling(seq_along(1:243)/9))

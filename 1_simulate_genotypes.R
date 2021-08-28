@@ -1,3 +1,6 @@
+# In 20 parallelized jobs, runs COSI to obtain genotypes
+# Recodes in R to genotypes C/G, saves with AF and variant info
+
 arrayid <- as.numeric(Sys.getenv('SLURM_ARRAY_TASK_ID')) 
 chunks <- split(1:243, ceiling(seq_along(1:243)/12))
 chunks[[20]] <- c(chunks[[20]],chunks[[21]]); chunks <- chunks[1:20]

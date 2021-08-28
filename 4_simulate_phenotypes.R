@@ -1,3 +1,6 @@
+# Takes simulated gds file and generates aggregation units,
+# Generates phenotype file
+
 library(STAAR); library(rje); library(matrixStats) 
 library(gdsfmt); library(SeqArray); library(STAAR)
 library(SeqVarTools); library(dplyr); library(data.table)
